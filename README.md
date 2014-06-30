@@ -37,5 +37,5 @@ mt-data-api.jsを読み込むようにテンプレートの&lt;head&gt;内を編
 
 取得件数を変更したい場合は、「limit: 20,」の箇所で件数を変更してください。  
 
-また、所得する項目も「fields: 'title, permalink',」でブログ記事のタイトルと個別ページのURLに絞り込んでいます。  
+また、取得する項目も「fields: 'title, permalink',」でブログ記事のタイトルと個別ページのURLに絞り込んでいます。  
 絞り込まない場合は「fields: 'title, permalink',」を削除してください。  
