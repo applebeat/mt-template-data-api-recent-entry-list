@@ -1,0 +1,37 @@
+// クイックリファレンス
+// https://github.com/movabletype/Documentation/wiki/Quick-reference
+
+// 初期化
+var api = new MT.DataAPI({
+baseUrl: '<mt:CGIPath>mt-data-api.cgi',
+// 任意の名前を設定してください。例：clientId: 'apple'
+clientId: '任意の名前'
+});
+
+// BlogのIDを設定
+// 例：var blogId = 1;
+var blogId = ブログのID番号;
+
+// その他のパラメーターの設定
+// 以下ではエントリー記事の件数とData APIで取得するフィールドを指定しています。
+var params = {
+limit: 20,
+fields: 'title, permalink',
+};
+
+// エントリー一覧を作ってみよう！
+// エントリーエンドポイント：<mt:CGIPath>mt-data-api.cgi/v1/sites/2/entries
+
+api.listEntries(blogId ,params ,function(response){
+if(response.error){return;}
+for ( i=0; i< response.items.length; i++){
+
+// 必要な項目を変数に代入
+// 変数に代入せず、直接、「perlink」を「response.items[i].permalink」にすることも出来ます。
+var perlink = response.items[i].permalink;
+var enttitle = response.items[i].title;
+
+jQuery('#recententrylist').append( jQuery('<li>').append( jQuery('<a>').attr('href', perlink).append( enttitle )));
+
+}
+});
