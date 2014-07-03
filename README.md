@@ -39,4 +39,4 @@ mt-data-api.jsを読み込むようにテンプレートの&lt;head&gt;内を編
 
 各エントリー記事のリンクが&lt;li&gt;タグでマークアップされて書き出されます。  
 &lt;li&gt;タグでマークアップされたソースを表示させるために、事前にテンプレートに&lt;ul id="recententrylist"&gt;&lt;/ul&gt;  を設定しておく必要があります。  
-id属性値を変更したい場合は、Step3で作成したテンプレートの「jQuery('#recententrylist').append~」の#recententrylisも変更する必要があります。
+id属性値を変更したい場合は、Step3で作成したテンプレートの「jQuery('#recententrylist').append~」の#recententrylistも変更する必要があります。
