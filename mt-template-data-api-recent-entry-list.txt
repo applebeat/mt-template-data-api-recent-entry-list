@@ -16,7 +16,7 @@ var blogId = ブログのID番号;
 // 以下ではエントリー記事の件数とData APIで取得するフィールドを指定しています。
 var params = {
 limit: 20,
-fields: 'title, permalink',
+fields: 'title,permalink'
 };
 
 // エントリー一覧を作ってみよう！
