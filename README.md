@@ -30,7 +30,7 @@ mt-data-api.jsを読み込むようにテンプレートの&lt;head&gt;内を編
 
 ■Step5■  
 ブログ記事のリストを表示させたいところに以下のHTMLソースを追加してください。    
-&lt:ul id="recententrylist"&gt;&lt;/ul&gt;    
+&lt;ul id="recententrylist"&gt;&lt;/ul&gt;    
 
 ======================================
 取得されるブログ記事の件数はデフォルトでは10件ですが、20件のブログ記事を取得するようになっています。  
