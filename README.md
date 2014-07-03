@@ -14,13 +14,13 @@ mt-data-api.jsを読み込むようにテンプレートの&lt;head&gt;内を編
   
 ■Step3■  
 「mt-template-data-api-recent-entry-list.txt」をコピーしてインデックス・テンプレートを作成し、書き出します。  
+例：mt-template-data-api-recent-entry-list.js  
+
 設定が必要なところ  
 ・clientId  
 　　clientIdには任意の名前を設定してください。  
 ・blogId  
 　　blogIdにはデータを取得したいブログのID番号を設定してください。  
-
-例：mt-template-data-api-recent-entry-list.js  
 
 ■Step4■  
 ブログ記事リストを表示させたいページに■Step3■で書き出したファイルを読み込むようにテンプレートの&lt;head&gt;内を編集します。  
