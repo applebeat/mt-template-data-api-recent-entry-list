@@ -16,11 +16,7 @@ var blogId = ブログのID番号;
 // 以下ではエントリー記事の件数とData APIで取得するフィールドを指定しています。
 var params = {
 limit: 20,
-<<<<<<< HEAD
 fields: 'title,permalink'
-=======
-// fields: 'title, permalink',
->>>>>>> d9288a47c6595e10bfe342930963d9a9b633b09c
 };
 
 // エントリー一覧を作ってみよう！
@@ -31,11 +27,10 @@ if(response.error){return;}
 for ( i=0; i< response.items.length; i++){
 
 // 必要な項目を変数に代入
-// 変数に代入せず、直接、「perlink」を「response.items[i].permalink」にすることも出来ます。
-var perlink = response.items[i].permalink;
 var enttitle = response.items[i].title;
+var perlink = response.items[i].permalink;
 
-jQuery('#recententrylist').append( jQuery('<li>').append( jQuery('<a>').attr('href', perlink).append( enttitle )));
+jQuery('#recententrylist').append( jQuery('<li>').append( jQuery('<a>').attr('href', response.items[i].permalink ).append( enttitle )));
 
 }
 });
