@@ -31,7 +31,7 @@ for ( i=0; i< response.items.length; i++){
 var enttitle = response.items[i].title;
 var perlink = response.items[i].permalink;
 
-jQuery('#recententrylist').append( jQuery('<li>').append( jQuery('<a>').attr('href', response.items[i].permalink ).append( enttitle )));
+jQuery('#recententrylist').append( jQuery('<li>').append( jQuery('<a>').attr('href', perlink ).append( enttitle )));
 
 }
 });
