@@ -27,6 +27,7 @@ if(response.error){return;}
 for ( i=0; i< response.items.length; i++){
 
 // 必要な項目を変数に代入
+// 変数に代入せず、直接、「perlink」を「response.items[i].permalink」にすることも出来ます。  
 var enttitle = response.items[i].title;
 var perlink = response.items[i].permalink;
 
