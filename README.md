@@ -5,7 +5,7 @@ Data APIを使ってブログ記事の一覧を取得して表示させます。
 ■Step1■  
 jQueryを読み込むようにテンプレートの&lt;head&gt;内を編集します。  
 例：  
-&lt;script src="http://your-url/jquery.min.js"&gt;&lt;/script&gt;  
+<script src="http://your-url/jquery.min.js"></script>
 
 ■Step2■  
 mt-data-api.jsを読み込むようにテンプレートの&lt;head&gt;内を編集します。  
